@@ -43,7 +43,7 @@ int main(){
   }
   ofstream notyet( "not_yet_found_compounds" );
   for ( auto const& w : auc_words ){
-    if ( frog_words.find( w ) != frog_words.end() ){
+    if ( frog_words.find( w ) == frog_words.end() ){
       notyet << w << endl;
     }
   }
